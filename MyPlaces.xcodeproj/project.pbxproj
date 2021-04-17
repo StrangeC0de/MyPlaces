@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		610CD1AC262B3CF4004E6693 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610CD1AB262B3CF4004E6693 /* Launch Screen.storyboard */; };
 		6180134726275757003BCA23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180134626275757003BCA23 /* AppDelegate.swift */; };
 		6180134926275757003BCA23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180134826275757003BCA23 /* SceneDelegate.swift */; };
 		6180134E26275757003BCA23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6180134C26275757003BCA23 /* Main.storyboard */; };
 		6180135026275758003BCA23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6180134F26275758003BCA23 /* Assets.xcassets */; };
-		6180135326275758003BCA23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6180135126275758003BCA23 /* LaunchScreen.storyboard */; };
 		6180135D26275CDB003BCA23 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180135C26275CDB003BCA23 /* MainViewController.swift */; };
+		61B16448262B4D010071188A /* LaunchScreenImg@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B16445262B4D010071188A /* LaunchScreenImg@1x.png */; };
+		61B16449262B4D010071188A /* LaunchScreenImg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B16446262B4D010071188A /* LaunchScreenImg@3x.png */; };
+		61B1644A262B4D010071188A /* LaunchScreenImg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61B16447262B4D010071188A /* LaunchScreenImg@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		610CD1AB262B3CF4004E6693 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		6180134326275757003BCA23 /* MyPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6180134626275757003BCA23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6180134826275757003BCA23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6180134D26275757003BCA23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6180134F26275758003BCA23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6180135226275758003BCA23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6180135426275758003BCA23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6180135C26275CDB003BCA23 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		61B16445262B4D010071188A /* LaunchScreenImg@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreenImg@1x.png"; sourceTree = "<group>"; };
+		61B16446262B4D010071188A /* LaunchScreenImg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreenImg@3x.png"; sourceTree = "<group>"; };
+		61B16447262B4D010071188A /* LaunchScreenImg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchScreenImg@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +67,10 @@
 				6180134C26275757003BCA23 /* Main.storyboard */,
 				6180135C26275CDB003BCA23 /* MainViewController.swift */,
 				6180134F26275758003BCA23 /* Assets.xcassets */,
-				6180135126275758003BCA23 /* LaunchScreen.storyboard */,
+				610CD1AB262B3CF4004E6693 /* Launch Screen.storyboard */,
+				61B16445262B4D010071188A /* LaunchScreenImg@1x.png */,
+				61B16447262B4D010071188A /* LaunchScreenImg@2x.png */,
+				61B16446262B4D010071188A /* LaunchScreenImg@3x.png */,
 				6180135426275758003BCA23 /* Info.plist */,
 			);
 			path = MyPlaces;
@@ -124,8 +133,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6180135326275758003BCA23 /* LaunchScreen.storyboard in Resources */,
+				610CD1AC262B3CF4004E6693 /* Launch Screen.storyboard in Resources */,
+				61B16449262B4D010071188A /* LaunchScreenImg@3x.png in Resources */,
 				6180135026275758003BCA23 /* Assets.xcassets in Resources */,
+				61B1644A262B4D010071188A /* LaunchScreenImg@2x.png in Resources */,
+				61B16448262B4D010071188A /* LaunchScreenImg@1x.png in Resources */,
 				6180134E26275757003BCA23 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,14 +164,6 @@
 				6180134D26275757003BCA23 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6180135126275758003BCA23 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6180135226275758003BCA23 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -216,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
