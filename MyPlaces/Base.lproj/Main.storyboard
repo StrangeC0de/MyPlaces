@@ -64,9 +64,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="imageOfPlace" destination="aLt-uV-R6g" id="L2K-E9-6rF"/>
                                     <outlet property="locationLabel" destination="0ER-wN-5VK" id="3vv-Ho-CX4"/>
                                     <outlet property="nameLabel" destination="C19-3h-aqa" id="kgw-O2-iG0"/>
+                                    <outlet property="placeImage" destination="aLt-uV-R6g" id="L2K-E9-6rF"/>
                                     <outlet property="typeLabel" destination="Icy-jS-azJ" id="BEU-Gk-byV"/>
                                 </connections>
                             </tableViewCell>
@@ -130,7 +130,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QsD-pH-wFD">
                                                     <rect key="frame" x="16" y="8" width="382" height="63"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPU-Ro-3cf">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPU-Ro-3cf">
                                                             <rect key="frame" x="0.0" y="0.0" width="382" height="28.5"/>
                                                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="20"/>
                                                             <nil key="textColor"/>
@@ -236,11 +236,22 @@
                     <navigationItem key="navigationItem" title="New Place" id="IQZ-F3-Ea7">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="exC-fK-YGD">
                             <connections>
-                                <segue destination="5Ff-oB-5sO" kind="unwind" unwindAction="cancelAction:" id="dtA-a4-YXa"/>
+                                <action selector="cancelAction:" destination="yVQ-06-WUm" id="Lnq-AB-PpO"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="AZD-KD-tZL"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="AZD-KD-tZL">
+                            <connections>
+                                <segue destination="5Ff-oB-5sO" kind="unwind" unwindAction="unwindSeague:" id="loF-ki-lDb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="placeImage" destination="3fG-1J-Y6p" id="yjE-qM-5pO"/>
+                        <outlet property="placeLocation" destination="EbK-i3-U2c" id="EYB-Hr-vC9"/>
+                        <outlet property="placeName" destination="Yeg-4f-l80" id="xQt-vw-fv1"/>
+                        <outlet property="placeType" destination="vYC-CG-JKV" id="DR7-Ih-pTv"/>
+                        <outlet property="saveButton" destination="AZD-KD-tZL" id="Wdq-zo-yNu"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgv-u8-9Y2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="5Ff-oB-5sO" userLabel="Exit" sceneMemberID="exit"/>
