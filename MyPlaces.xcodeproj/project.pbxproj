@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0207A097F5CCEBDE2126C2B7 /* Pods_MyPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F598FD6772AD9D3FB50C2631 /* Pods_MyPlaces.framework */; };
+		61062E6A26511AA300F076EE /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61062E6926511AA300F076EE /* MapManager.swift */; };
 		610CD1AC262B3CF4004E6693 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610CD1AB262B3CF4004E6693 /* Launch Screen.storyboard */; };
 		611454DB262C2E1200435620 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611454DA262C2E1200435620 /* CustomTableViewCell.swift */; };
 		611454DE262C320300435620 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611454DD262C320300435620 /* PlaceModel.swift */; };
@@ -15,7 +16,6 @@
 		611454E3262C41DD00435620 /* Photo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 611454E1262C41DD00435620 /* Photo@3x.png */; };
 		611454E6262C452D00435620 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611454E5262C452D00435620 /* NewPlaceViewController.swift */; };
 		61687BAE2635BA6B007DF862 /* cameraIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61687BAA2635BA6B007DF862 /* cameraIcon@2x.png */; };
-		61687BAF2635BA6B007DF862 /* photoIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61687BAB2635BA6B007DF862 /* photoIcon@2x.png */; };
 		61687BB92635BCCC007DF862 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61687BB82635BCCC007DF862 /* Assets.xcassets */; };
 		61687BBC2635BCF6007DF862 /* imagePlaceholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61687BBB2635BCF6007DF862 /* imagePlaceholder@2x.png */; };
 		61730FED263FE699001D14CD /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61730FEC263FE699001D14CD /* RatingControl.swift */; };
@@ -31,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61062E6926511AA300F076EE /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
+		61062E7126512DBF00F076EE /* photoIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photoIcon@2x.png"; sourceTree = "<group>"; };
 		610CD1AB262B3CF4004E6693 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		611454DA262C2E1200435620 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		611454DD262C320300435620 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
@@ -38,7 +40,6 @@
 		611454E1262C41DD00435620 /* Photo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Photo@3x.png"; sourceTree = "<group>"; };
 		611454E5262C452D00435620 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		61687BAA2635BA6B007DF862 /* cameraIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cameraIcon@2x.png"; sourceTree = "<group>"; };
-		61687BAB2635BA6B007DF862 /* photoIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "photoIcon@2x.png"; path = "../../Hello_Swift/[sharewood.biz] 5. Курс Приложения на основе UITableView/Конечный проект/ActionSheet Icons/photoIcon@2x.png"; sourceTree = "<group>"; };
 		61687BB82635BCCC007DF862 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61687BBB2635BCF6007DF862 /* imagePlaceholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imagePlaceholder@2x.png"; sourceTree = "<group>"; };
 		61730FEC263FE699001D14CD /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
@@ -78,6 +79,70 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		61062E6B26512CE700F076EE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6180135C26275CDB003BCA23 /* MainViewController.swift */,
+				611454E5262C452D00435620 /* NewPlaceViewController.swift */,
+				6193866E264535BA0037C1BD /* MapViewController.swift */,
+				611454DA262C2E1200435620 /* CustomTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		61062E6C26512D1C00F076EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				611454DD262C320300435620 /* PlaceModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		61062E6D26512D2A00F076EE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				61062E6926511AA300F076EE /* MapManager.swift */,
+				61E6F8D62639BF55005CD82B /* StorageManager.swift */,
+				61730FEC263FE699001D14CD /* RatingControl.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		61062E6E26512D3F00F076EE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6180134826275757003BCA23 /* SceneDelegate.swift */,
+				61687BB82635BCCC007DF862 /* Assets.xcassets */,
+				6180135426275758003BCA23 /* Info.plist */,
+				6180134626275757003BCA23 /* AppDelegate.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		61062E6F26512D5D00F076EE /* IBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				610CD1AB262B3CF4004E6693 /* Launch Screen.storyboard */,
+				6180134C26275757003BCA23 /* Main.storyboard */,
+			);
+			path = IBuilder;
+			sourceTree = "<group>";
+		};
+		61062E7026512DAF00F076EE /* Img */ = {
+			isa = PBXGroup;
+			children = (
+				61687BBB2635BCF6007DF862 /* imagePlaceholder@2x.png */,
+				611454E0262C41DD00435620 /* Photo@2x.png */,
+				61062E7126512DBF00F076EE /* photoIcon@2x.png */,
+				611454E1262C41DD00435620 /* Photo@3x.png */,
+				61B16447262B4D010071188A /* LaunchScreenImg@2x.png */,
+				61B16445262B4D010071188A /* LaunchScreenImg@1x.png */,
+				61B16446262B4D010071188A /* LaunchScreenImg@3x.png */,
+				61687BAA2635BA6B007DF862 /* cameraIcon@2x.png */,
+			);
+			path = Img;
+			sourceTree = "<group>";
+		};
 		6180133A26275757003BCA23 = {
 			isa = PBXGroup;
 			children = (
@@ -99,27 +164,12 @@
 		6180134526275757003BCA23 /* MyPlaces */ = {
 			isa = PBXGroup;
 			children = (
-				6180134626275757003BCA23 /* AppDelegate.swift */,
-				6180134826275757003BCA23 /* SceneDelegate.swift */,
-				6180134C26275757003BCA23 /* Main.storyboard */,
-				6180135C26275CDB003BCA23 /* MainViewController.swift */,
-				611454E5262C452D00435620 /* NewPlaceViewController.swift */,
-				6193866E264535BA0037C1BD /* MapViewController.swift */,
-				611454DD262C320300435620 /* PlaceModel.swift */,
-				61E6F8D62639BF55005CD82B /* StorageManager.swift */,
-				611454DA262C2E1200435620 /* CustomTableViewCell.swift */,
-				61730FEC263FE699001D14CD /* RatingControl.swift */,
-				61687BB82635BCCC007DF862 /* Assets.xcassets */,
-				61687BBB2635BCF6007DF862 /* imagePlaceholder@2x.png */,
-				61687BAA2635BA6B007DF862 /* cameraIcon@2x.png */,
-				61687BAB2635BA6B007DF862 /* photoIcon@2x.png */,
-				611454E0262C41DD00435620 /* Photo@2x.png */,
-				611454E1262C41DD00435620 /* Photo@3x.png */,
-				610CD1AB262B3CF4004E6693 /* Launch Screen.storyboard */,
-				61B16445262B4D010071188A /* LaunchScreenImg@1x.png */,
-				61B16447262B4D010071188A /* LaunchScreenImg@2x.png */,
-				61B16446262B4D010071188A /* LaunchScreenImg@3x.png */,
-				6180135426275758003BCA23 /* Info.plist */,
+				61062E7026512DAF00F076EE /* Img */,
+				61062E6F26512D5D00F076EE /* IBuilder */,
+				61062E6E26512D3F00F076EE /* Support Files */,
+				61062E6D26512D2A00F076EE /* Helpers */,
+				61062E6C26512D1C00F076EE /* Models */,
+				61062E6B26512CE700F076EE /* ViewControllers */,
 			);
 			path = MyPlaces;
 			sourceTree = "<group>";
@@ -202,7 +252,6 @@
 				611454E2262C41DD00435620 /* Photo@2x.png in Resources */,
 				6180134E26275757003BCA23 /* Main.storyboard in Resources */,
 				61687BAE2635BA6B007DF862 /* cameraIcon@2x.png in Resources */,
-				61687BAF2635BA6B007DF862 /* photoIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +310,7 @@
 				61E6F8D72639BF55005CD82B /* StorageManager.swift in Sources */,
 				6193866F264535BA0037C1BD /* MapViewController.swift in Sources */,
 				61730FED263FE699001D14CD /* RatingControl.swift in Sources */,
+				61062E6A26511AA300F076EE /* MapManager.swift in Sources */,
 				611454DE262C320300435620 /* PlaceModel.swift in Sources */,
 				611454DB262C2E1200435620 /* CustomTableViewCell.swift in Sources */,
 				6180134926275757003BCA23 /* SceneDelegate.swift in Sources */,
@@ -405,7 +455,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FQH7BC4U7;
-				INFOPLIST_FILE = MyPlaces/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyPlaces/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -426,7 +476,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FQH7BC4U7;
-				INFOPLIST_FILE = MyPlaces/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyPlaces/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
