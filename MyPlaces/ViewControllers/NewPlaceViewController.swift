@@ -39,7 +39,7 @@ class NewPlaceViewController: UITableViewController {
         if indexPath.row == 0 {
             
             let cameraIcon = UIImage(imageLiteralResourceName: "cameraIcon@2x.png")
-            let photoIcon = UIImage(imageLiteralResourceName: "photoIcon@2x.png")
+            let photoIcon = #imageLiteral(resourceName: "photoIcon")
             
             let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
             
